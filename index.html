@@ -3,96 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>@ofsinandsiren — Huntington Beach, CA</title>
+<title>LUXURY LIVING — @ofsinandsiren | Huntington Beach</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <style>
-  body{margin:0;font-family:Inter,-apple-system,sans-serif;background:#fdfcfa;color:#1a1a1a;line-height:1.6}
-  .container{max-width:900px;margin:0 auto;padding:0 24px}
-  header{text-align:center;padding:80px 0 30px}
-  h1{font-size:48px;margin:0;letter-spacing:-1.5px}
-  .loc{letter-spacing:3px;text-transform:uppercase;font-size:13px;color:#777;margin-top:12px}
-  .contact{margin-top:18px;font-size:15px}
-  .contact a{color:#111;text-decoration:none;border-bottom:1px solid #111;padding-bottom:2px;margin:0 8px}
-  .bio{max-width:600px;margin:28px auto 0;font-size:18px;color:#333}
-  section{padding:50px 0;border-top:1px solid #eee}
-  section h2{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#999;text-align:center;margin:0 0 30px}
-  .mag-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-  .mag-grid span{background:#fff;border:1px solid #eee;padding:10px 18px;border-radius:999px;font-size:14px}
-  .press-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .press-card{background:#fff;border:1px solid #eee;border-radius:16px;padding:20px;transition:all .2s}
-  .press-card:hover{border-color:#111}
-  .press-card h3{margin:0 0 6px;font-size:16px}
-  .press-card p{margin:0;color:#666;font-size:13px}
-  .press-card a{font-size:13px;color:#111;text-decoration:none;display:inline-block;margin-top:10px;border-bottom:1px solid #111}
-  .placeholder{opacity:.6;border-style:dashed}
-  footer{text-align:center;padding:50px 0 70px;color:#aaa;font-size:11px;letter-spacing:2px}
-  @media(max-width:600px){.press-grid{grid-template-columns:1fr} h1{font-size:36px}}
+  :root{--black:#0a0a0a;--cream:#faf8f5;--line:#e8e2da;--muted:#8a8885}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--cream);color:var(--black);font-family:'Inter',sans-serif;font-weight:300}
+  .topbar{display:flex;justify-content:space-between;padding:18px 40px;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--muted)}
+  .hero{text-align:center;padding:90px 20px 50px}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-size:78px;font-weight:300;letter-spacing:-2px;line-height:.9}
+  .hero h1 em{font-style:italic;font-weight:300}
+  .hero .sub{margin-top:22px;font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--muted)}
+  .hero .contact{margin-top:30px;font-size:12px;letter-spacing:2px}
+  .hero .contact a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--black);padding-bottom:3px;margin:0 12px}
+  .editorial{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;max-width:1200px;margin:0 auto;padding:60px 40px;border-top:1px solid var(--line)}
+  .editorial p{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.6}
+  .editorial .side{font-family:'Inter';font-size:13px;line-height:1.8;color:var(--muted)}
+  .section-label{text-align:center;padding:60px 0 20px;font-size:10px;letter-spacing:6px;text-transform:uppercase;color:var(--muted)}
+  .mag-row{display:flex;justify-content:center;gap:30px;padding:20px 40px 60px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .mag-row div{text-align:center}
+  .mag-row div strong{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;display:block}
+  .mag-row div span{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+  .press{max-width:1200px;margin:0 auto;padding:0 40px 80px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+  .press div{background:var(--cream);padding:30px}
+  .press div h4{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;margin-bottom:8px}
+  .press div p{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+  .press div a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--black);text-decoration:none;border-bottom:1px solid var(--black);padding-bottom:2px}
+  footer{text-align:center;padding:60px;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line)}
+  @media(max-width:900px){.hero h1{font-size:46px}.editorial{grid-template-columns:1fr}.press{grid-template-columns:1fr}.topbar{padding:14px 20px}}
 </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>@ofsinandsiren</h1>
-    <div class="loc">Huntington Beach, California</div>
+  <div class="topbar">
+    <span>Huntington Beach, California</span>
+    <span>@ofsinandsiren</span>
+    <span>elmaibee2@gmail.com</span>
+  </div>
+
+  <div class="hero">
+    <h1>LUXURY <em>LIVING</em><br>IN HUNTINGTON BEACH</h1>
+    <div class="sub">@ofsinandsiren — Creator & Model</div>
     <div class="contact">
-      <a href="mailto:elmaibee2@gmail.com">elmaibee2@gmail.com</a>
-      <a href="https://instagram.com/ofsinandsiren" target="_blank">Instagram</a>
+      <a href="mailto:elmaibee2@gmail.com">ELMAIBEE2@GMAIL.COM</a>
+      <a href="https://instagram.com/ofsinandsiren">INSTAGRAM</a>
     </div>
-    <p class="bio">Creator and model based in Huntington Beach. Coastal lifestyle, natural light, and Orange County community. Previously featured in Orange County magazines.</p>
-  </header>
+  </div>
 
-  <section>
-    <h2>Featured In Orange County Magazines</h2>
-    <div class="mag-grid">
-      <span>Orange Coast Magazine</span>
-      <span>Locale Magazine</span>
-      <span>Riviera Orange County</span>
-      <span>OC Weekly</span>
-      <span>Modern Luxury OC</span>
+  <div class="editorial">
+    <p>
+      Based in Huntington Beach, @ofsinandsiren documents coastal luxury through natural light and everyday elegance. From sunrise at the pier to Main Street boutiques, the work captures the quiet luxury of Orange County living.
+    </p>
+    <div class="side">
+      Previously based in Escondido, now rooted in Huntington Beach. Focused on authentic, fully-clothed lifestyle editorial.<br><br>
+      For collaborations: elmaibee2@gmail.com<br>
+      Location: Huntington Beach, CA<br>
+      Handle: @ofsinandsiren
     </div>
-  </section>
+  </div>
 
-  <section id="press">
-    <h2>Press & Features — For Verification</h2>
-    <div class="press-grid">
-      <!-- Replace # with your live link after it publishes -->
-      <div class="press-card">
-        <h3>Orange Coast Magazine</h3>
-        <p>Orange County lifestyle feature</p>
-        <a href="#" target="_blank">Read Article →</a>
-      </div>
-      <div class="press-card">
-        <h3>Locale Magazine</h3>
-        <p>Huntington Beach creator profile</p>
-        <a href="#" target="_blank">Read Article →</a>
-      </div>
-      <div class="press-card">
-        <h3>Riviera Orange County</h3>
-        <p>Coastal culture feature</p>
-        <a href="#" target="_blank">Read Article →</a>
-      </div>
-      <div class="press-card placeholder">
-        <h3>VoyageLA</h3>
-        <p>Pending — paste link here after interview</p>
-        <a href="#">Link Coming Soon</a>
-      </div>
-      <div class="press-card placeholder">
-        <h3>Shoutout LA</h3>
-        <p>Pending — paste link here</p>
-        <a href="#">Link Coming Soon</a>
-      </div>
-      <div class="press-card placeholder">
-        <h3>CanvasRebel</h3>
-        <p>Pending — paste link here</p>
-        <a href="#">Link Coming Soon</a>
-      </div>
+  <div class="section-label">As Featured In — Orange County Magazines</div>
+  <div class="mag-row">
+    <div><strong>Orange Coast</strong><span>Magazine</span></div>
+    <div><strong>Locale</strong><span>Magazine</span></div>
+    <div><strong>Riviera</strong><span>Orange County</span></div>
+    <div><strong>Modern Luxury</strong><span>OC</span></div>
+    <div><strong>OC Weekly</strong><span>Editorial</span></div>
+  </div>
+
+  <div class="section-label">Press & Editorial Coverage</div>
+  <div class="press">
+    <div>
+      <h4>Orange Coast Magazine</h4>
+      <p>Orange County Feature</p>
+      <a href="#">Read Feature →</a>
     </div>
-    <p style="text-align:center;color:#888;font-size:13px;margin-top:24px">Tip: Once you have 5 live links, use this page as your website link when you request verification in Instagram settings.</p>
-  </section>
+    <div>
+      <h4>Locale Magazine</h4>
+      <p>Huntington Beach Profile</p>
+      <a href="#">Read Feature →</a>
+    </div>
+    <div>
+      <h4>Riviera OC</h4>
+      <p>Luxury Living Feature</p>
+      <a href="#">Read Feature →</a>
+    </div>
+    <div>
+      <h4>VoyageLA</h4>
+      <p>Pending Publication</p>
+      <a href="#">Link Coming Soon</a>
+    </div>
+    <div>
+      <h4>Shoutout LA</h4>
+      <p>Pending Publication</p>
+      <a href="#">Link Coming Soon</a>
+    </div>
+    <div>
+      <h4>CanvasRebel</h4>
+      <p>Pending Publication</p>
+      <a href="#">Link Coming Soon</a>
+    </div>
+  </div>
 
   <footer>
-    HUNTINGTON BEACH, CA — ELMAIBEE2@GMAIL.COM — @OFSINANDSIREN<br><br>
-    Site for verification — All press is independent editorial coverage.
+    Huntington Beach, California — @ofsinandsiren — elmaibee2@gmail.com<br><br>
+    All imagery fully-clothed editorial luxury lifestyle
   </footer>
-</div>
 </body>
-  </html>
+        </html>
